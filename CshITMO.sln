@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greetings", "Greetings\Greetings.csproj", "{3A67D036-BDDB-4AE1-9A0C-814FB95CDEC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greetings", "Greetings\Greetings.csproj", "{3A67D036-BDDB-4AE1-9A0C-814FB95CDEC4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Greet", "Greet", "{794AC664-8B03-4087-8961-1FA7622AC58D}"
 EndProject
@@ -11,7 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Laba 1", "Laba 1", "{C6B457
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Divide", "Divide", "{82B202A6-A432-4365-8116-AE5E93CF4F95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivideIt", "DivideIt\DivideIt.csproj", "{2D41E8AB-4475-4D1C-9B9F-8AD59CEEC17F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DivideIt", "DivideIt\DivideIt.csproj", "{2D41E8AB-4475-4D1C-9B9F-8AD59CEEC17F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Laba 2", "Laba 2", "{58D7A279-784F-4432-B67E-0AC7EB0C0BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{0E52B5A7-E3FF-41B5-A9D2-C99343EFA077}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,10 @@ Global
 		{2D41E8AB-4475-4D1C-9B9F-8AD59CEEC17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D41E8AB-4475-4D1C-9B9F-8AD59CEEC17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D41E8AB-4475-4D1C-9B9F-8AD59CEEC17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E52B5A7-E3FF-41B5-A9D2-C99343EFA077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E52B5A7-E3FF-41B5-A9D2-C99343EFA077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E52B5A7-E3FF-41B5-A9D2-C99343EFA077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E52B5A7-E3FF-41B5-A9D2-C99343EFA077}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +44,7 @@ Global
 		{794AC664-8B03-4087-8961-1FA7622AC58D} = {C6B4578B-FC14-441F-A527-23EB34289ED9}
 		{82B202A6-A432-4365-8116-AE5E93CF4F95} = {C6B4578B-FC14-441F-A527-23EB34289ED9}
 		{2D41E8AB-4475-4D1C-9B9F-8AD59CEEC17F} = {82B202A6-A432-4365-8116-AE5E93CF4F95}
+		{0E52B5A7-E3FF-41B5-A9D2-C99343EFA077} = {58D7A279-784F-4432-B67E-0AC7EB0C0BFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00B82544-E700-4593-AD9D-A1D2C7047216}
