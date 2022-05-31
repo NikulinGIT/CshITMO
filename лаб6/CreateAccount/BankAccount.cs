@@ -14,8 +14,31 @@ namespace CreateAccount
 
     internal class BankAccount
     {
-        public long accNo;
-        public decimal accBal;
-        public AccountType accType;
+
+        public void Populate(long number, decimal balance)
+        {
+            accNo = number;
+            accBal = balance;
+            accType = AccountType.Checking;
+        }
+
+        private long accNo;
+        private decimal accBal;
+        private AccountType accType;
+         
+    public long Number()
+    {
+        return accNo;
+    }
+    public decimal Balance()
+    {
+        return accBal;
+    }
+    public AccountType Type()
+    {
+        return accType;
     }
 }
+}
+  
+       
