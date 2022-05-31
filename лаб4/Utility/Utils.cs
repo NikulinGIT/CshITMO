@@ -10,11 +10,11 @@ namespace Utility
     {
         public static int Greater(int a, int b)
         {
-            if (a > b)
-                return a;
-            else
-                return b;
+            int temp = a;
+            a = b;
+            b = temp;
         }
+
 
     }
 }
