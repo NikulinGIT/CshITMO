@@ -27,13 +27,20 @@ namespace WhatDay3
                 Console.Write("Please enter the year: ");
                 string line = Console.ReadLine();
                 int yearNum = int.Parse(line);
-                Console.Write("Please enter a day number between 1 and 365: ");
-                line = Console.ReadLine();
-                int dayNum = int.Parse(line);
-
+                
                 bool isLeapYear = (yearNum % 4 == 0)
                 && (yearNum % 100 != 0
                 || yearNum % 400 == 0);
+                int maxDayNum = isLeapYear ? 366 : 365;
+
+                Console.Write("Please enter a day number between 1 and {0}: ", maxDayNum);
+                line = Console.ReadLine();
+                int dayNum = int.Parse(line);
+
+                if (dayNum < 1 || dayNum > maxDayNum)
+                {
+                    throw new ArgumentOutOfRangeException("Day out of range");
+                }
 
                 //if (isLeapYear)
                 //{
