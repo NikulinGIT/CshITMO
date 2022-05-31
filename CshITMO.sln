@@ -35,6 +35,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "лаб6", "лаб6", "{68AE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateAccounts", "лаб6\CreateAccount\CreateAccounts.csproj", "{696BC42C-0871-4A5C-825D-253749403A38}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "лаб7", "лаб7", "{25AA35C5-A0FB-439F-B0E0-5E4411172FEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transfer", "лаб7\Transfer\Transfer.csproj", "{5F19711E-94A3-412F-BACD-00E0C2F726C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,10 @@ Global
 		{696BC42C-0871-4A5C-825D-253749403A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{696BC42C-0871-4A5C-825D-253749403A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{696BC42C-0871-4A5C-825D-253749403A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F19711E-94A3-412F-BACD-00E0C2F726C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F19711E-94A3-412F-BACD-00E0C2F726C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F19711E-94A3-412F-BACD-00E0C2F726C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F19711E-94A3-412F-BACD-00E0C2F726C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +104,7 @@ Global
 		{22B5A327-CFCD-4D34-9DF9-E55580B683F2} = {992D5B78-8919-414C-8307-6844D71ADF19}
 		{C0A6282D-7B0A-44FC-B84D-DDC7BFD28608} = {3739A62D-6D72-4599-AE88-D5524DC1ED86}
 		{696BC42C-0871-4A5C-825D-253749403A38} = {68AECEB7-E981-4221-B46A-E849A274EBAB}
+		{5F19711E-94A3-412F-BACD-00E0C2F726C9} = {25AA35C5-A0FB-439F-B0E0-5E4411172FEC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00B82544-E700-4593-AD9D-A1D2C7047216}
