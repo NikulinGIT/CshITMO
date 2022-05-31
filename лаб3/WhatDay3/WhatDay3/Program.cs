@@ -37,6 +37,9 @@ namespace WhatDay3
                 line = Console.ReadLine();
                 int dayNum = int.Parse(line);
 
+
+
+
                 if (dayNum < 1 || dayNum > maxDayNum)
                 {
                     throw new ArgumentOutOfRangeException("Day out of range");
@@ -54,19 +57,42 @@ namespace WhatDay3
 
 
                 int monthNum = 0;
+
+
+
+                int[] DaysInLeapMonths = { 31, 29, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30 };
                 int[] DaysInMonths = { 31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30 };
-                foreach (int daysInMonth in DaysInMonths)
+                if (isLeapYear)
                 {
-                    if (dayNum <= daysInMonth)
+                    foreach (int daysInMonth in DaysInLeapMonths)
                     {
-                        break;
-                    }
-                    else
-                    {
-                        dayNum -= daysInMonth;
-                        monthNum++;
+                        if (dayNum <= daysInMonth)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            dayNum -= daysInMonth;
+                            monthNum++;
+                        }
                     }
                 }
+                else
+                {
+                    foreach (int daysInMonth in DaysInMonths)
+                    {
+                        if (dayNum <= daysInMonth)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            dayNum -= daysInMonth;
+                            monthNum++;
+                        }
+                    }
+                }
+
                 MonthName temp = (MonthName)monthNum;
                 string monthName = temp.ToString();
 
