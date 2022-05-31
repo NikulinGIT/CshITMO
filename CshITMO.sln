@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileDetails", "лаб5\File
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "лаб6", "лаб6", "{68AECEB7-E981-4221-B46A-E849A274EBAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateAccount", "лаб6\CreateAccount\CreateAccount.csproj", "{696BC42C-0871-4A5C-825D-253749403A38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateAccounts", "лаб6\CreateAccount\CreateAccounts.csproj", "{696BC42C-0871-4A5C-825D-253749403A38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
