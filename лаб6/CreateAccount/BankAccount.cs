@@ -15,13 +15,14 @@ namespace CreateAccount
     internal class BankAccount
     {
 
-        public void Populate(long number, decimal balance)
+        public void Populate( decimal balance)
         {
-            accNo = number;
+            accNo = NextNumber();
+
             accBal = balance;
             accType = AccountType.Checking;
         }
-        public static long NextNumber()
+        private static long NextNumber()
         {
             return nextAccNo++;
         }
