@@ -15,12 +15,16 @@ class FileDetails
         {
             contents[i] = (char)reader.Read();
         }
-        foreach (char ch in contents)
-        {
-            Console.Write(ch);
-        }
+        reader.Close();
+        Summarize(contents);
+        //foreach (char ch in contents)
+        //{
+        //    Console.Write(ch);
+        //}
 
+       
     }
+      
     static void Summarize(char[] contents)
     {
         int vowels = 0, consonants = 0, lines = 0;
@@ -43,9 +47,9 @@ class FileDetails
             }
         }
         Console.WriteLine("Total no of characters: {0}", contents.Length);
-        Console.WriteLine("Total no of vowels : {0}", vowels);
+        Console.WriteLine("Total no of vowels    : {0}", vowels);
         Console.WriteLine("Total no of consonants: {0}", consonants);
-        Console.WriteLine("Total no of lines : {0}", lines);
+        Console.WriteLine("Total no of lines     : {0}", lines);
     }
 
 }
