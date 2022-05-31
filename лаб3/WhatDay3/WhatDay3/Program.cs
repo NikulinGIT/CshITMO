@@ -30,7 +30,22 @@ namespace WhatDay3
                 Console.Write("Please enter a day number between 1 and 365: ");
                 line = Console.ReadLine();
                 int dayNum = int.Parse(line);
-                
+
+                bool isLeapYear = (yearNum % 4 == 0)
+                && (yearNum % 100 != 0
+                || yearNum % 400 == 0);
+
+                //if (isLeapYear)
+                //{
+                //    Console.WriteLine(" IS a leap year");
+                //}
+                //else
+                //{
+                //    Console.WriteLine(" is NOT a leap year");
+                //}
+
+
+
                 int monthNum = 0;
                 int[] DaysInMonths = { 31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30 };
                 foreach (int daysInMonth in DaysInMonths)
