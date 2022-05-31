@@ -24,9 +24,11 @@ namespace CreateAccount
 
         private long accNo;
         private decimal accBal;
+
         private AccountType accType;
-         
-    public long Number()
+
+
+        public long Number()
     {
         return accNo;
     }
@@ -34,11 +36,12 @@ namespace CreateAccount
     {
         return accBal;
     }
-    public AccountType Type()
-    {
-        return accType;
+        public string Type()
+        {
+            return accType.ToString();
+        }
+
     }
-}
 }
   
        
