@@ -22,9 +22,9 @@ namespace CreateAccount
         {
             BankAccount created = new BankAccount();
 
-            Console.Write("Enter the account number   : ");
-            long number = long.Parse(Console.ReadLine());
-
+            //Console.Write("Enter the account number   : ");
+            // long number = long.Parse(Console.ReadLine());
+            long number = BankAccount.NextNumber();
             Console.Write("Enter the account balance! : ");
             decimal balance = decimal.Parse(Console.ReadLine());
 

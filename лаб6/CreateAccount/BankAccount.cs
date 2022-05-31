@@ -21,12 +21,18 @@ namespace CreateAccount
             accBal = balance;
             accType = AccountType.Checking;
         }
+        public static long NextNumber()
+        {
+            return nextAccNo++;
+        }
+
 
         private long accNo;
         private decimal accBal;
 
         private AccountType accType;
 
+        private static long nextAccNo;
 
         public long Number()
     {
