@@ -1,4 +1,4 @@
-﻿
+﻿namespace CreateAccount;
     class CreateAccount
     {
         static void Main()
