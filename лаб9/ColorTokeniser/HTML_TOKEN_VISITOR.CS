@@ -3,7 +3,7 @@ namespace CSharp
 { 
     using System;
 
-    public class HTMLTokenVisitor : NullTokenVisitor
+    public sealed class HTMLTokenVisitor : ITokenVisitor
     {
         private void FilteredWrite(IToken token)
         {
@@ -26,25 +26,30 @@ namespace CSharp
             }
         }
 
-        public override void Visit(ILineStartToken line)
+        public void Visit(ILineStartToken line)
         {
             Console.Write("<span class=\"line_number\">");
             Console.Write("{0,3}", line.Number());
             Console.Write("</span>");
 
         }
-        public override void Visit(ILineEndToken t)
+        public void Visit(IDirectiveToken token)
+        {
+            SpannedFilteredWrite("directive", token);
+        }
+
+        public void Visit(ILineEndToken t)
         {
             Console.WriteLine(); // Not Write
         }
-        public override void Visit(IIdentifierToken token)
+        public void Visit(IIdentifierToken token)
         {
             SpannedFilteredWrite("identifier", token);
         }
 
 
        
-        public override void Visit(ICommentToken token)
+        public void Visit(ICommentToken token)
         {
             SpannedFilteredWrite("comment", token);
 
@@ -57,19 +62,19 @@ namespace CSharp
             Console.Write("</span>");
         }
 
-        public override void Visit(IKeywordToken token)
+        public void Visit(IKeywordToken token)
         {
             SpannedFilteredWrite("keyword", token);
         }
 
 
-        public override void Visit(IWhiteSpaceToken token)
+        public void Visit(IWhiteSpaceToken token)
         {
             Console.Write(token.ToString());
         }
 
     
-        public override void Visit(IOtherToken token)
+        public void Visit(IOtherToken token)
         {
             FilteredWrite(token);
         }
