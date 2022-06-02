@@ -25,7 +25,7 @@
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <ProjectGuid>{9B2C7D9D-84A4-420F-9DFC-62F1AE0B772E}</ProjectGuid>
