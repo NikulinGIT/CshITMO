@@ -9,6 +9,8 @@ namespace CSharp
         {
             try {
                 InnerMain(args);
+                HTMLTokenVisitor visitor = new HTMLTokenVisitor();
+                source.Accept(visitor);
             }
             catch (System.Exception caught) {
                 Console.WriteLine(caught);
