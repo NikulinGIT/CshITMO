@@ -2,9 +2,13 @@
 namespace CSharp
 { 
     using System;
-    
-    public class HTMLTokenVisitor 
+
+    public class HTMLTokenVisitor : NullTokenVisitor
     {
-        // Add methods here
+        public void Visit(ILineStartToken line)
+        {
+            Console.Write(line.Number()); // Not WriteLine
+        }
     }
+
 }
