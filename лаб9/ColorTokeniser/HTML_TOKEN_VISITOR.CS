@@ -5,7 +5,7 @@ namespace CSharp
 
     public class HTMLTokenVisitor : NullTokenVisitor
     {
-        public void Visit(ILineStartToken line)
+        public override void Visit(ILineStartToken line)
         {
             Console.Write(line.Number()); // Not WriteLine
         }

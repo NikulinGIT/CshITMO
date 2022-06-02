@@ -9,8 +9,7 @@ namespace CSharp
         {
             try {
                 InnerMain(args);
-                HTMLTokenVisitor visitor = new HTMLTokenVisitor();
-                source.Accept(visitor);
+             
             }
             catch (System.Exception caught) {
                 Console.WriteLine(caught);
@@ -20,7 +19,8 @@ namespace CSharp
         public static void InnerMain(string[] args)
         {
             SourceFile source = new SourceFile(args[0]);
-            
+            HTMLTokenVisitor visitor = new HTMLTokenVisitor();
+            source.Accept(visitor);
             // Add code here...
         }
     }
