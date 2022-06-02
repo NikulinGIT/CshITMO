@@ -7,8 +7,10 @@ namespace CSharp
     {
         public override void Visit(ILineStartToken line)
         {
-            Console.Write(line.Number()); // Not WriteLine
+            Console.WriteLine();
         }
-    }
+           
 
+              //Console.Write(line.Number()); // Not WriteLine
+         }
 }
