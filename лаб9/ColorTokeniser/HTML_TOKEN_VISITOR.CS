@@ -55,10 +55,13 @@ namespace CSharp
 
         public override void Visit(IKeywordToken token)
         {
-            Console.Write(token.ToString());
+            Console.Write("<span class=\"keyword\">");
+            FilteredWrite(token);
+            Console.Write("</span>");
+
         }
 
-       
+
         public override void Visit(IWhiteSpaceToken token)
         {
             Console.Write(token.ToString());
