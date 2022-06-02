@@ -46,10 +46,13 @@ namespace CSharp
        
         public override void Visit(ICommentToken token)
         {
+            Console.Write("<span class=\"comment\">");
             FilteredWrite(token);
+            Console.Write("</span>");
+
         }
 
-        
+
         public override void Visit(IKeywordToken token)
         {
             Console.Write(token.ToString());
