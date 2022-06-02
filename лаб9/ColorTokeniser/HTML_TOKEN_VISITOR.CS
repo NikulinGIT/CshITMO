@@ -39,26 +39,27 @@ namespace CSharp
         }
         public override void Visit(IIdentifierToken token)
         {
-            Console.Write(token.ToString());
+            SpannedFilteredWrite("identifier", token);
         }
 
 
        
         public override void Visit(ICommentToken token)
         {
-            Console.Write("<span class=\"comment\">");
-            FilteredWrite(token);
-            Console.Write("</span>");
+            SpannedFilteredWrite("comment", token);
 
         }
 
+        private void SpannedFilteredWrite(string spanName, IToken token)
+        {
+            Console.Write("<span class=\"{0}\">", spanName);
+            FilteredWrite(token);
+            Console.Write("</span>");
+        }
 
         public override void Visit(IKeywordToken token)
         {
-            Console.Write("<span class=\"keyword\">");
-            FilteredWrite(token);
-            Console.Write("</span>");
-
+            SpannedFilteredWrite("keyword", token);
         }
 
 
